@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="hisBox" id="hbox">
+             
+
+    </div>
+    <div class="calculator" name="calc">
+        <input type="text" id="uinput" class="value" name="txt" >
+        <span class="number clear" onclick="document.getElementById('uinput').value=''">c</span>
+        <span class="history" id="hisele" onClick="showHistory()">H</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='%'">%</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='/'">/</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='7'">7</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='8'">8</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='9'">9</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='*'">*</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='4'">4</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='5'">5</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='6'">6</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='-'">-</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='1'">1</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='2'">2</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='3'">3</span>
+        <span class="number equal" onclick="solve()">=</span>
+        <span class="number zero" onclick="document.getElementById('uinput').value+='0'">0</span>
+        <span class="number" onclick="document.getElementById('uinput').value+='.'">.</span>
+        <span class="number plus" onclick="document.getElementById('uinput').value+='+'">+</span>
+ 
+    </div>
+
+ 
+</body>
+</html>
